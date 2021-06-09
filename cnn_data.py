@@ -30,8 +30,8 @@ for index,classlabel in enumerate(classes):
 X = np.array(X)
 Y = np.array(Y)
 
-X_train, X_test, y_train, y_test = model_selection.train_test_split(X,Y)
-xy = (X_train, X_test, y_train, y_test)
+X_train, X_test, y_train, y_test = model_selection.train_test_split(X,Y)  #サーキットラーンを使ってトレーニングしている
+xy = (X_train, X_test, y_train, y_test) #タプル型
 np.save("./imagefile.npy", xy) #バイナリーファイルに変換する
 
 
